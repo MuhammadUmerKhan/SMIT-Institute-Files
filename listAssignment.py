@@ -37,3 +37,36 @@ if delete in listing_:
     print("Item deleted. Updated list:", listing_)
 else:
     print("Item not found in the list. No changes made.")
+    
+#  6. Write a program that reads a string from the user containing a date in the form mm/dd/yyyy. It
+# should print the date in the form March 12, 2021. 
+
+
+# 7. Write a program with a function that accepts a string from keyboard and create a new string after
+# converting character of each word capitalized. For instance, if the sentence is "stop and smell the roses."
+# the output should be "Stop And Smell The Roses"
+inputStr = input("Enter String: ")
+strList = inputStr.split(' ') 
+capatalized = [i.capitalize() for i in strList]
+print(' '.join(capatalized))    
+
+
+# 8. Find the sum of each row of matrix of size m x n. For example for the following matrix output will be
+# like this :
+# Sum of row 1 = 32
+# Sum of row 2 = 31
+# Sum of row 3 = 63
+
+matrix = [[2, 11, 7, 12], 
+          [5, 2, 9, 15], 
+          [8, 3, 10, 42]]
+len(matrix)
+row_sums = [sum(i) for i in matrix]
+for i, row_sum in enumerate(row_sums, start=1):
+    print(f"Sum of row {i}: {row_sum}")
+    
+# 9. Write a program to add two matrices of size n x m.
+# 10. Write a program to multiply two matrices        
+myList = ['a', 'e', 'i', 'o', 'u']
+rotated = [myList[-1]] + myList[:-1]
+print("Rotated List: ", rotated)
